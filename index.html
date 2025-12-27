@@ -42,7 +42,7 @@
             document.getElementById("surprise").style.display = "block";
         }
 
-        const countDownDate = new Date("Dec 27, 2025 18:00:00").getTime();
+        const countDownDate = new Date("Jan 2, 2026 21:45:00").getTime();
         const x = setInterval(function () {
             const now = new Date().getTime();
             const distance = countDownDate - now;
@@ -51,13 +51,14 @@
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
             document.getElementById("countdown").innerHTML =
-                "Countdown to our moment: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                "Countdown to the moment you have to answer if you ever thought my love is real: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "It's time 💍";
+                document.getElementById("countdown").innerHTML = "It's time yrr please be mine plzz 💍";
             }
         }, 1000);
     </script>
 </body>
 </html>
+
 
